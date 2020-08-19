@@ -35,7 +35,7 @@ router.post('/registr', [
         res.status(201).json({message: "User was add successfuly"})
 
     } catch(e){
-        res.status(500).json({message : "some error"})
+        res.status(500).json({message : "Помилка при реєстрації"})
     }
 })
 
@@ -77,7 +77,7 @@ router.post('/login',
 
 
     } catch(e){
-        res.status(500).json({message : "some error"})
+        res.status(500).json({message : "Помилка при логіні"})
     }
 })
 
